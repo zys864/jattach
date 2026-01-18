@@ -5,7 +5,7 @@
 
 const std = @import("std");
 const builtin = @import("builtin");
-const main = @import("main.zig");
+const main = @import("./main.zig");
 
 const c = @cImport({
     @cInclude("unistd.h");

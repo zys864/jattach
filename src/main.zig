@@ -7,10 +7,10 @@ const std = @import("std");
 const builtin = @import("builtin");
 const config = @import("config");
 
-pub const psutil = @import("psutil.zig");
-pub const hotspot = @import("jattach_hotspot.zig");
-pub const openj9 = @import("jattach_openj9.zig");
-pub const jattach_windows = @import("jattach_windows.zig");
+pub const psutil = @import("./psutil.zig");
+pub const hotspot = @import("./jattach_hotspot.zig");
+pub const openj9 = @import("./jattach_openj9.zig");
+pub const jattach_windows = @import("./jattach_windows.zig");
 
 const c = @cImport({
     @cInclude("unistd.h");
